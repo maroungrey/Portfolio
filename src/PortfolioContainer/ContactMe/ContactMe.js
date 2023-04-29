@@ -22,7 +22,7 @@ export default function ContactMe(props) {
               console.log(error.text);
           });
         }
-    
+
 
 
   return (
@@ -70,14 +70,16 @@ export default function ContactMe(props) {
 
                 </div>
                 <div className='col p-3'>
-                    <form className="contact-form" onSubmit={sendEmail}>
+                    <form action="?" method="POST" className="contact-form" onSubmit={sendEmail}>
+                    <div id="html_element"></div>
+                    <br></br>
                         <label htmlFor='name'>Name</label>
                         <input type='text'
                            name="from_name"
                         />
 
                         <label htmlFor='email'>Email</label>
-                        <input type='email' 
+                        <input type='text' 
                             name="user_email"
                         />
 
@@ -95,7 +97,9 @@ export default function ContactMe(props) {
                 </div>
             </div>
         </div>
-
+{/* +++++++++++++++++++ */}
+{/* +++++++++++++++++++ */}
+{/* +++++++++++++++++++ */}
         <div className='copyright'>
             <span>© MarounGrey {(new Date().getFullYear())}</span>
         </div>
