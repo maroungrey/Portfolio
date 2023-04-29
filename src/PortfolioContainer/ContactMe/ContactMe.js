@@ -71,7 +71,8 @@ export default function ContactMe(props) {
                 </div>
                 <div className='col p-3'>
                     <form action="?" method="POST" className="contact-form" onSubmit={sendEmail}>
-                    <div id="html_element"></div>
+                    
+                    
                     <br></br>
                         <label htmlFor='name'>Name</label>
                         <input type='text'
@@ -87,6 +88,10 @@ export default function ContactMe(props) {
                         <textarea type='text' 
                             name="message"
                         />
+
+                        {/* <div className="g-recaptcha" data-sitekey="6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"></div> */}
+
+                        <div id="html_element"></div>
 
                         <div className='send-btn'>
                             <button type='submit'>
