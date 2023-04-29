@@ -91,7 +91,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I highly recommend Maroun to anyone looking for a web developer. He is not only skilled and knowledgeable, but also easy to work with.
+                      I highly recommend Maroun to anyone looking for a reliable web developer. He is not only skilled and knowledgeable, but also easy to work with. He gets things done fast.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -162,7 +162,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      Maroun took the time to understand our business needs and delivered a website that perfectly reflects our brand.
+                      Maroun took the time to understand our business needs and delivered a website that perfectly reflects our brand. He works fast and have a great communication skills.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">

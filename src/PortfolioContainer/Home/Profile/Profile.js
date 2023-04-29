@@ -1,5 +1,6 @@
 import React from 'react';
 // import Typical from 'react-typical';
+import { TypeAnimation } from 'react-type-animation';
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
 
@@ -30,21 +31,23 @@ export default function Profile() {
                     <div className='profile-details-role mt-2'>
                         <span className='primary-text'>
                             <h1 className='font-hermit'>
-                                {/* <Typical
-                                
-                                loop={Infinity}
-                                steps={[
-                                    "Software Engineer",
-                                    1000,
-                                    "Full Stack Developer",
-                                    1000,
-                                    "E-Commerce Developer",
-                                    1000,
-                                    "Web Developer",
-                                    1000,
-                                ]}
+                            <TypeAnimation
+                            sequence={[
+                                'Software Engineer',
+                                1000, 
+                                'Full Stack Developer',
+                                1000,
+                                'E-Commerce Developer',
+                                1000,
+                                'Web Developer',
+                                1000,
 
-                                /> */}
+                            ]}
+                            wrapper="span"
+                            cursor={true}
+                            repeat={Infinity}
+                            />
+  
                             </h1>
                             <span className='profile-role-tagline'>
                                 Transforming ideas into seamless software solutions

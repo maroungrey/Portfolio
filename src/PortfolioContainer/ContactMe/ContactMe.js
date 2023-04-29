@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 // import Typical from 'react-typical';
 
-
+import { TypeAnimation } from 'react-type-animation';
 import './ContactMe.css'
 import load1 from './load2.gif'
 import emailjs from 'emailjs-com';
@@ -37,17 +37,24 @@ export default function ContactMe(props) {
 
 
             <div className='back-form'>
-                <div className='col'>
+                <div className='col d-flex align-items-center'>
 
                     <div className='p-3'>
                         <h2 className='title'>
-                            {/* <Typical
-                            loop={Infinity}
-                            steps={[
-                                "Get In Touch",
-                                1000,
+                        <TypeAnimation
+                            sequence={[
+                                'Get in Touch', 
+                                2000, 
+                                'Send an Email',
+                                2000,
+                                'Contact Me',
+                                2000,
+
                             ]}
-                            /> */}
+                            wrapper="span"
+                            cursor={true}
+                            repeat={Infinity}
+                            />
                         </h2>
                         <div>
                             <a href='https://www.linkedin.com/in/maroungrey/' target="_blank">
@@ -64,7 +71,6 @@ export default function ContactMe(props) {
                         <div className='img-back'>
                             <h4 className='pt-2 pb-2'>Send Your Email Here!</h4>
                             <div className='email-image'></div>
-                            {/* <img src='./email.png' alt ="404" /> */}
                         </div>
                     </div>
 
@@ -89,8 +95,6 @@ export default function ContactMe(props) {
                             name="message"
                         />
 
-                        {/* <div className="g-recaptcha" data-sitekey="6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"></div> */}
-
                         <div id="html_element"></div>
 
                         <div className='send-btn'>
@@ -102,9 +106,7 @@ export default function ContactMe(props) {
                 </div>
             </div>
         </div>
-{/* +++++++++++++++++++ */}
-{/* +++++++++++++++++++ */}
-{/* +++++++++++++++++++ */}
+
         <div className='copyright'>
             <span>© MarounGrey {(new Date().getFullYear())}</span>
         </div>

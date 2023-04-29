@@ -167,5 +167,13 @@
     .central-form h2 {
       font-size: 16px;
     }
+    .back-form {
+      margin: initial;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    #html_element {
+      transform: scale(0.6);
+    }
   }
   
