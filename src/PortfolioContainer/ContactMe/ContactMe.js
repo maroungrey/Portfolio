@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 // import Typical from 'react-typical';
 
+import axios from 'axios';
+import {toast} from 'react-toastify';
 import "./ContactMe.css";
 import load1 from "./load2.gif";
 import emailjs from "emailjs-com";
@@ -9,6 +11,58 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 
 export default function ContactMe(props) {
+
+
+    let fadeInScreenHandler = (screen) => {	
+        if (screen.fadeInScreen !== props.id) return;	
+        Animations.animations.fadeInScreen(props.id);	
+      };	
+      const fadeInSubscription =	
+        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);	
+    
+
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [banner, setBanner] = useState("");
+    const [bool, setBool] = useState(false);
+    
+
+    const handleName = (e)=>{
+        setName(e.target.value);
+    };
+    const handleEmail = (e)=>{
+        setEmail(e.target.value);
+    };
+    const handleMessage = (e)=>{
+        setMessage(e.target.value);
+    };
+    const submitForm = async(e)=>{
+        e.preventDefault();
+
+        try {
+            let data ={
+                name,
+                email,
+                message,
+            };
+            setBool(true)
+            const res = await axios.post(`/contact`, data);
+            if(name.length === 0 || email.length === 0 || message.length === 0) {
+                setBanner(res.data.msg)
+                toast.error(res.data.msg)
+                setBool(false)
+            } else if (res.status=== 200){
+                setBanner(res.data.msg)
+                toast.success(res.data.msg)
+                setBool(false)
+            }
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
+
   function sendEmail(e) {
     e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
 
@@ -83,10 +137,12 @@ export default function ContactMe(props) {
               <textarea type="text" name="message" />
 
               <div className="send-btn">
-                <button
-                  type="submit"
-                >
-                  Send
+              <button type='submit'>
+                    Send
+                    {/* <i className='fa fa-paper-plane' /> */}
+                    {bool?(<b className='load'>
+                        <img src={load1} alt='' />
+                    </b>):("")}
                 </button>
                 {/* <div class="g-recaptcha" data-sitekey="6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"></div> */}
               </div>
