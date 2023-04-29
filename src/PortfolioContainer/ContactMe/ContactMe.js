@@ -1,71 +1,29 @@
 import React,{useState} from 'react';
 // import Typical from 'react-typical';
-import axios from 'axios';
-import {toast} from 'react-toastify';
+
 
 import './ContactMe.css'
 import load1 from './load2.gif'
+import emailjs from 'emailjs-com';
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
-import Footer from "../../PortfolioContainer/Footer/Footer";
+
 
 export default function ContactMe(props) {
 
-
-    let fadeInScreenHandler = (screen) => {	
-        if (screen.fadeInScreen !== props.id) return;	
-        Animations.animations.fadeInScreen(props.id);	
-      };	
-      const fadeInSubscription =	
-        ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);	
+    function sendEmail(e) {
+        e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
     
-
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [message, setMessage] = useState("");
-    const [banner, setBanner] = useState("");
-    const [bool, setBool] = useState(false);
-    
-
-    const handleName = (e)=>{
-        setName(e.target.value);
-    };
-    const handleEmail = (e)=>{
-        setEmail(e.target.value);
-    };
-    const handleMessage = (e)=>{
-        setMessage(e.target.value);
-    };
-    const submitForm = async(e)=>{
-        e.preventDefault();
-
-        try {
-            let data ={
-                name,
-                email,
-                message,
-            };
-            setBool(true)
-            const res = await axios.post(`/contact`, data);
-            if(name.length === 0 || email.length === 0 || message.length === 0) {
-                setBanner(res.data.msg);
-                toast.error(res.data.msg);
-                setBool(false);
-            } else if (res.status=== 200){
-                setBanner(res.data.msg);
-                toast.success(res.data.msg);
-                setBool(false);
-
-                setName("");
-                setEmail("");
-                setMessage("");
-            }
-        } catch (error) {
-            console.log(error)
+        emailjs.sendForm('service_0so4k0d', 'template_fsjf079', e.target, 'DmkIqtFP9TZ2_6UAN')
+          .then((result) => {
+              window.location.reload()  //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior) 
+          }, (error) => {
+              console.log(error.text);
+          });
         }
+    
 
-    }
 
   return (
     <div className='main-container' id={props.id || ""}>
@@ -112,33 +70,25 @@ export default function ContactMe(props) {
 
                 </div>
                 <div className='col p-3'>
-                    <form onSubmit={submitForm}>
-                        <p>{banner}</p>
+                    <form onSubmit={sendEmail}>
                         <label htmlFor='name'>Name</label>
                         <input type='text'
-                            onChange={handleName}
-                            value={name}
+                           name="from_name"
                         />
 
                         <label htmlFor='email'>Email</label>
                         <input type='text' 
-                            onChange={handleEmail}
-                            value={email}
+                            name="from_email"
                         />
 
                         <label htmlFor='message'>Message</label>
                         <textarea type='text' 
-                            onChange={handleMessage}
-                            value={message}
+                            name="html_message"
                         />
 
                         <div className='send-btn'>
                             <button type='submit'>
                                 Send
-                                {/* <i className='fa fa-paper-plane' /> */}
-                                {bool?(<b className='load'>
-                                    <img src={load1} alt='' />
-                                </b>):("")}
                             </button>
                         </div>
                     </form>
