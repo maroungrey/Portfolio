@@ -1,0 +1,75 @@
+.profile-details-name {
+    font-size: 3vw;
+}
+.profile-details-role h1 {
+    font-size: 2.5vw;
+    font-family: "Hermit";
+}
+
+.primary-text {
+    color: white;
+}
+
+.highlighted-text {
+    color: var(--maroon);
+    font-family: "Poppins Bold";
+    text-transform: uppercase;
+}
+.profile-role-tagline {
+    font-size: 20px;
+    margin-top: 5px;
+    font-family: "Poppins Light";
+}
+
+.icons i{
+    color: white;
+    font-size: 1.33333333em;
+}
+ .icons i:hover {
+    transform: scale(1.5);
+}
+
+
+.profile-img img{
+    max-width: 100%;
+}
+
+.profile-img-desktop .profile-img{
+    float: right;
+}
+.profile-img-mobile .profile-img {
+    margin: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .profile-details-name {
+        font-size: 2rem;
+    }
+    .profile-details-role h1 {
+        font-size: 1.5rem;
+        font-family: "Hermit";
+    }
+    .profile-role-tagline {
+        font-size: 14px;
+    }
+    .profile-img-desktop {
+        display: none;
+    }
+    .profile-buttons {
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1600px) {
+    .profile-details-name {
+        font-size: 3rem;
+    }
+    .profile-details-role h1 {
+        font-size: 2.5rem;
+        font-family: "Hermit";
+    }
+    .profile-role-tagline {
+        font-size: 14px;
+    }
+}

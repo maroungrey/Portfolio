@@ -1,0 +1,27 @@
+.projects-container {
+    background-color: #890000;
+
+}
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+}
+.project-image img{
+    max-width: 100%;
+    margin:auto;
+    display: block;
+    border-radius:  12px 12px 0 0 ;
+}
+.project-textbox {
+    color: #000;
+    background-color: #eee;
+    padding: 1rem;
+    max-width: 350px;
+    margin: auto;
+    font-size: 12px;
+    border-radius:  0 0 12px 12px;
+}
+.project-textbox h5{
+    color: #890000;
+    font-family: 'Poppins SemiBold';
+}

@@ -1,0 +1,17 @@
+
+.about-me-image img{
+  max-width: 100%;
+}
+.about-me-description {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 992px ) {
+  .about-me-options {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+  
