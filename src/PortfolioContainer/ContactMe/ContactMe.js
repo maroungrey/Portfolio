@@ -28,9 +28,6 @@ export default function ContactMe(props) {
         }
       );
   }
-  function onSubmit(token) {
-    document.getElementById("contactMe").submit();
-  }
 
   return (
     <div className="main-container" id={props.id || ""}>
@@ -75,7 +72,7 @@ export default function ContactMe(props) {
             </div>
           </div>
           <div className="col p-3">
-            <form id="contactMe" onSubmit={sendEmail} method="POST">
+            <form onSubmit={sendEmail}>
               <label htmlFor="name">Name</label>
               <input type="text" name="from_name" />
 
@@ -88,13 +85,10 @@ export default function ContactMe(props) {
               <div className="send-btn">
                 <button
                   type="submit"
-                  className="g-recaptcha"
-                  data-sitekey="6Lf-m8glAAAAADHmFgesT_772IT60fDI8VriIWLv"
-                  data-callback={onSubmit}
-                  data-action="submit"
                 >
                   Send
                 </button>
+                {/* <div class="g-recaptcha" data-sitekey="6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"></div> */}
               </div>
             </form>
           </div>
