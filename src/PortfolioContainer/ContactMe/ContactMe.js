@@ -70,20 +70,20 @@ export default function ContactMe(props) {
 
                 </div>
                 <div className='col p-3'>
-                    <form onSubmit={sendEmail}>
+                    <form className="contact-form" onSubmit={sendEmail}>
                         <label htmlFor='name'>Name</label>
                         <input type='text'
                            name="from_name"
                         />
 
                         <label htmlFor='email'>Email</label>
-                        <input type='text' 
-                            name="from_email"
+                        <input type='email' 
+                            name="user_email"
                         />
 
                         <label htmlFor='message'>Message</label>
                         <textarea type='text' 
-                            name="html_message"
+                            name="message"
                         />
 
                         <div className='send-btn'>
