@@ -1,4 +1,6 @@
 # My Portfolio Website
+View the live version of the project: https://maroungrey.com/
+
 This is a portfolio website that I created as part of my journey to learn React. It uses React, Node.js, and Bootstrap, and I've incorporated several React modules to enhance the functionality of the site.
 
 ### About the Project
