@@ -62,11 +62,6 @@ export default function Projects(props) {
             
         </div>
 
-        {/* <div className='footer-container'>
-            <div className='footer-parent'>
-                <img src="./shape-03.png" alt='no internet'/>
-            </div>
-        </div> */}
 
     </div>
     
