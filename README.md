@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# My Portfolio Website
+View the live version of the project: https://maroungrey.com/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a portfolio website that I created as part of my journey to learn React. It uses React, Node.js, and Bootstrap, and I've incorporated several React modules to enhance the functionality of the site.
 
-## Available Scripts
+### About the Project
+I started by following along with a React course on Udemy, but then decided to completely rework the project on my own. I ran into some difficulties along the way, such as issues with the `react-typical` module, which caused problems with my node dependencies and prevented me from deploying the website.
 
-In the project directory, you can run:
+To solve this problem, I created a new (this) repository and started over. Fortunately, I was able to restore my progress quickly and didn't have to rework any of my CSS or JavaScript files. My old repository is available here: https://github.com/maroungrey/PortfolioSite
 
-### `npm start`
+### Features
+My portfolio website features a responsive design that works well on both desktop and mobile devices. I've also incorporated several React modules to enhance the functionality of the site. For example, I used `react-type-animation` to add the typing animation im the Hero and Contact Me sections, and `react-owl-carousel` for the Testimonials section.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Getting Started
+To run the project locally, you'll need to have Node.js and npm installed on your machine. Then, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Clone the repository to your local machine.
+Navigate to the project directory in your terminal.
+Run npm install to install the project dependencies.
+Run npm start to start the development server.
+Open your browser and navigate to http://localhost:3000 to view the website.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Acknowledgements
+I want to give a shoutout to the Udemy course that I initially followed (https://www.udemy.com/course/the-ultimate-react-js-responsive-portfolio-website/), as it provided a great foundation for me to build upon. I also want to thank the developers of the various React modules that I used in my project, as they helped me to add additional functionality to my site.
