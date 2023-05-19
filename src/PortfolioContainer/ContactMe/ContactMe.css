@@ -12,7 +12,7 @@
     margin: 0 auto;
     flex-direction: column;
     justify-content: center;
-    background: rgba(0, 0, 0, .45) url('./Banner.png');
+    background: rgba(0, 0, 0, .45) url('./Banner.webp');
     background-size:cover;
     background-repeat: no-repeat;
     background-blend-mode: darken;
@@ -20,7 +20,7 @@
   .email-image {
     width: 200px;
     height: 200px;
-    background: url('./email.png');
+    background: url('./email.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

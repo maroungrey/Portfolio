@@ -26,7 +26,7 @@ export default function Projects(props) {
                 <div className='col-12 col-md-4 mb-5 project-card'>
                     <a className='text-decoration-none' href='https://ishoppurium.com/' target='_blank'>
                         <div className="project-image">
-                            <img className='img-responsive' src='./portfolio-1.png' />
+                            <img className='img-responsive' src='./portfolio-1.webp' />
                         </div>
                         <div className="project-textbox">
                             <h5>Purium</h5>
@@ -38,7 +38,7 @@ export default function Projects(props) {
                 <div className='col-12 col-md-4 mb-5 project-card'>
                     <a className='text-decoration-none' href='https://eargasm.com/' target='_blank'>
                         <div className="project-image">
-                            <img className='img-responsive' src='./portfolio-2.png' />
+                            <img className='img-responsive' src='./portfolio-2.webp' />
                         </div>
                         <div className="project-textbox">
                             <h5>Eargasm</h5>
@@ -50,7 +50,7 @@ export default function Projects(props) {
                 <div className='col-12 col-md-4 mb-5 project-card'>
                     <a className='text-decoration-none' href='https://www.panoplie.com/' target='_blank'>
                         <div className="project-image">
-                            <img className='img-responsive' src='./portfolio-3.png' />
+                            <img className='img-responsive' src='./portfolio-3.webp' />
                         </div>
                         <div className="project-textbox">
                             <h5>Panoplie</h5>

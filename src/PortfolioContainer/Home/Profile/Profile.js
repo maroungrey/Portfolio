@@ -68,7 +68,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='col-12 col-md-6 profile-img'>
-                    <img className='img-responsive' src='./maroun-1.png'/>
+                    <img className='img-responsive' src='./maroun-1.webp'/>
             </div>
         </div>
 
