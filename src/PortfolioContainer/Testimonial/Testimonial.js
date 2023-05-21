@@ -125,7 +125,7 @@ export default function Testimonial(props) {
                   <div className="testi-comment">
                     <p>
                       <i className="fa fa-quote-left" />
-                      I've had the pleasure of working with Maroun on multiple projects. He have a great eye for design and a deep understanding of the technical side of things.
+                      I've had the pleasure of working with Maroun on multiple projects. He has a great eye for design, a deep understanding of the technical side of things, and able to communicate effectively.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
