@@ -10,6 +10,21 @@ export default function ContactMe(props) {
 
   useEffect(() => {
     const loadReCaptcha = () => {
+      if (
+        recaptchaContainerRef.current &&
+        typeof window.grecaptcha !== "undefined"
+      ) {
+        const siteKey = "6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"; // Replace with your actual site key
+
+        if (!recaptchaContainerRef.current.hasChildNodes()) {
+          window.grecaptcha.render(recaptchaContainerRef.current, {
+            sitekey: siteKey,
+          });
+        }
+      }
+    };
+
+    if (typeof window.grecaptcha === "undefined") {
       const script = document.createElement("script");
       script.src =
         "https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit";
@@ -17,21 +32,10 @@ export default function ContactMe(props) {
       script.defer = true;
       document.body.appendChild(script);
 
-      window.onloadCallback = () => {
-        const siteKey = "6Le-qsglAAAAAOlN9b5gC0W_wxSBmHbAfosmwqBT"; // Replace with your actual site key
-
-        if (
-          recaptchaContainerRef.current &&
-          typeof window.grecaptcha !== "undefined"
-        ) {
-          window.grecaptcha.render(recaptchaContainerRef.current, {
-            sitekey: siteKey,
-          });
-        }
-      };
-    };
-
-    loadReCaptcha();
+      window.onloadCallback = loadReCaptcha;
+    } else {
+      loadReCaptcha();
+    }
   }, []);
 
   function sendEmail(e) {
@@ -111,6 +115,7 @@ export default function ContactMe(props) {
               <textarea name="message" id="message" required></textarea>
 
               <div ref={recaptchaContainerRef} id="recaptcha-container"></div>
+
 
               <div className="send-btn">
                 <button type="submit" aria-label="Send">

@@ -58,9 +58,12 @@ export default function Profile() {
                     <div className='profile-options mt-3'>
                         <div className='row'>
                             <div className='profile-buttons'>                    
-                                <a className='btn primary-btn outlined-btn m-2' onClick={() => ScrollService.scrollHandler.scrollToHireMe()}>
-                                    Get in Touch
-                                </a>
+                            <a href="/get-in-touch" onClick={(e) => { 
+                                e.preventDefault(); 
+                                ScrollService.scrollHandler.scrollToHireMe(); 
+                            }} className="btn primary-btn m-2">
+                                Get in Touch
+                            </a>
                                 <a href='https://maroun-barqawi.tiiny.site/' target='_blank' className='btn highlighted-btn m-2'>View Resume</a>
                             </div>
                             
