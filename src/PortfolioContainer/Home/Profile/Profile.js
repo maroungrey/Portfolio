@@ -1,5 +1,4 @@
 import React from 'react';
-// import Typical from 'react-typical';
 import { TypeAnimation } from 'react-type-animation';
 import ScrollService from "../../../utilities/ScrollService";
 import "./Profile.css";
@@ -12,15 +11,17 @@ export default function Profile() {
             <div className='col-12 col-md-6 text-md-left text-center d-md-flex align-items-center'>
                 <div>
                     <div className='icons'>
-                        <a className='m-1' href='https://www.linkedin.com/in/maroungrey/' target="_blank">
+
+                        <a className='icons-i' href='https://www.linkedin.com/in/maroungrey/' target="_blank">
                             <i className='fa fa-linkedin-square'></i>
                         </a>
-                        <a className='m-1' href='https://github.com/maroungrey' target="_blank">
+                        <a className='icons-i' href='https://github.com/maroungrey' target="_blank">
                             <i className='fa fa-github'></i>
                         </a>
-                        <a className='m-1' href='https://www.instagram.com/the_real_maroun/' target="_blank">
+                        <a className='icons-i' href='https://www.instagram.com/the_real_maroun/' target="_blank">
                             <i className='fa fa-instagram'></i>
                         </a>
+
                     </div>
             
                     <div className='profile-details-name mt-2'>
@@ -68,7 +69,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='col-12 col-md-6 profile-img'>
-                    <img className='img-responsive' src='./maroun-1.webp'/>
+                    <img className='img-responsive' src='./maroun-1.webp' alt='Maroun profile image' />
             </div>
         </div>
 

@@ -137,11 +137,14 @@
     color: green;
   }
   .col i {
-    padding-right: 15px;
+    margin-right: 15px;
     color: #fff;
   }
   .col i:hover {
     transform: scale(1.5);
+  }
+  .icons-i {
+    margin-right: 15px;
   }
   
   @media screen and (min-width: 940px) {

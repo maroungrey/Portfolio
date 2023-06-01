@@ -20,7 +20,7 @@ export default function AboutMe(props) {
             <div className="about-me-card container pb-5">
                 <div className='row'>
                     <div className="col-12 col-lg-6 about-me-image">
-                        <img className='img-responsive' src='./maroun-6-02.png'/>
+                        <img className='img-responsive' src='./maroun-6-02.png' alt='Maroun casual image' />
                     </div>
                     <div className="col-12 col-lg-6 mt-3">
                         <p className="about-me-description text-center text-lg-left">

@@ -63,7 +63,7 @@ export default function Header() {
       onClick={() => setShowHeaderOptions(!showHeaderOptions)}
     >
       <div className="header-logo m-3">
-          <img src='./Logo-03.svg' />
+          <img src='./Logo-03.svg' alt='Maroun grey logo' />
       </div>
       <div className="header-parent m-3">
         <div className="header-hamburger"

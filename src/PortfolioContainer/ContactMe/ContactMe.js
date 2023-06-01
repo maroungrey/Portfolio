@@ -75,21 +75,15 @@ export default function ContactMe(props) {
                   repeat={Infinity}
                 />
               </h2>
-              <div>
-                <a
-                  href="https://www.linkedin.com/in/maroungrey/"
-                  target="_blank"
-                >
-                  <i className="fa fa-linkedin-square"></i>
+              <div className='icons'>
+                <a className='m-1' href='https://www.linkedin.com/in/maroungrey/' target="_blank">
+                    <i className='fa fa-linkedin-square'></i>
                 </a>
-                <a href="https://github.com/maroungrey" target="_blank">
-                  <i className="fa fa-github"></i>
+                <a className='m-1' href='https://github.com/maroungrey' target="_blank">
+                    <i className='fa fa-github'></i>
                 </a>
-                <a
-                  href="https://www.instagram.com/the_real_maroun/"
-                  target="_blank"
-                >
-                  <i className="fa fa-instagram"></i>
+                <a className='m-1' href='https://www.instagram.com/the_real_maroun/' target="_blank">
+                    <i className='fa fa-instagram'></i>
                 </a>
               </div>
 
