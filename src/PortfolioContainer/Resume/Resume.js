@@ -102,7 +102,7 @@ const Resume = (props) => {
           heading={"Organic by Nature"}
           subHeading={"FULL STACK DEVELOPER"}
           fromDate={"2021"}
-          toDate={"Present"}
+          toDate={"2023"}
         />
         <div className="experience-description">
           <p className="resume-description-text">
