@@ -15,10 +15,10 @@ My portfolio website features a responsive design that works well on both deskto
 To run the project locally, you'll need to have Node.js and npm installed on your machine. Then, follow these steps:
 
 Clone the repository to your local machine.
-Navigate to the project directory in your terminal.
-Run npm install to install the project dependencies.
-Run npm start to start the development server.
-Open your browser and navigate to http://localhost:3000 to view the website.
+1. Navigate to the project directory in your terminal.
+2. Run npm install to install the project dependencies.
+3. Run npm start in the "client" directory to start the development server.
+4. Open your browser and navigate to http://localhost:5000 to view the website.
 
 ### Acknowledgements
 I want to give a shoutout to the Udemy course that I initially followed (https://www.udemy.com/course/the-ultimate-react-js-responsive-portfolio-website/), as it provided a great foundation for me to build upon. I also want to thank the developers of the various React modules that I used in my project, as they helped me to add additional functionality to my site.
