@@ -127,11 +127,11 @@ body ::-webkit-scrollbar-thumb {
 .highlighted-btn:hover {
   color: #000;
 }
-@media only screen and (max-width: 568px) {
+/* @media only screen and (max-width: 568px) {
   .highlighted-btn {
     z-index: -900;
   }
-}
+} */
 
 .red-border {
   border: 1px solid var(--error-message) !important;
