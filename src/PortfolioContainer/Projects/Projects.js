@@ -30,7 +30,7 @@ export default function Projects(props) {
                         </div>
                         <div className="project-textbox">
                             <h5>Purium</h5>
-                            <p>Shopify Plus, SQL, React, Node.js, Bootstrap, Wordpress, Azure</p>
+                            <p>Shopify based store for food supplements. I was the developer and project manager for this and several other company's websites.</p>
                         </div>
                     </a>
                 </div>
@@ -42,7 +42,7 @@ export default function Projects(props) {
                         </div>
                         <div className="project-textbox">
                             <h5>Eargasm</h5>
-                            <p>Shopify Plus, HTML, CSS, JavaScript, Bootstrap, Liquid, REST API</p>
+                            <p>Shopify based store for earplugs. I have designed and improved several pages and sections for better user experience and accessibility.</p>
                         </div>
                     </a>
                 </div>
@@ -54,7 +54,7 @@ export default function Projects(props) {
                         </div>
                         <div className="project-textbox">
                             <h5>Panoplie</h5>
-                            <p >Magento 2, PHP, Apache, HTML, CSS, JavaScript, Figma, Linux </p>
+                            <p >Magento 2 based designer furniture store. I have developed this website from scratch and maintained other company's websites.</p>
                         </div>
                     </a>
                 </div>
